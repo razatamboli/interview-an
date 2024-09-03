@@ -1,0 +1,15 @@
+
+<table class="table table-bordered text-center">
+    <thead>
+        <tr>
+            <th>Sr.No.</th>
+            <th>Todo Items</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let todo of todoArr; let i = index">
+            <td>{{i+1}}</td>
+            <td>{{todo.todoitem}}</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,19 @@
+
+<h2 class="my-2 bg-dark text-white text-center">Child Component</h2>
+
+<div class="card">
+    <div class="card-body">
+        <div>
+            
+            <p><span class="font-weight-bolder">Received Primitive Data: </span>{{ data }}</p>
+            <p class="font-weight-bolder">Received Non-Primitive Data: </p>
+                <ul><li *ngFor="let item of nonPrimitive">{{ item }}</li></ul>
+
+            <hr>
+
+            <p>Count: <span class="font-weight-bolder">{{ increament }}</span></p>
+            <button mat-raised-button color="accent" (click)="updateChildData()">Increase Count</button>
+            
+        </div>
+    </div>
+</div>
